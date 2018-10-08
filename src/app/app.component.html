@@ -1,13 +1,13 @@
 <mat-sidenav-container>
   <mat-sidenav  #sidenav role="navigation">
     <mat-nav-list>
-      <a mat-list-item>
+      <a mat-list-item routerLink="/">
         <span class="label">Home</span>
       </a>
-      <a mat-list-item>
+      <a mat-list-item routerLink="/login">
         <span class="label">Login</span>
       </a>
-      <a mat-list-item>
+      <a mat-list-item routerLink="/register">
         <span class="label">Register</span>
       </a>
     </mat-nav-list>
@@ -22,7 +22,7 @@
       <div fxFlex fxLayout fxLayoutAlign="flex-start" fxHide.xs>
         <ul fxLayout fxLayoutGap="20px" class="navigation-items">
           <li>
-            <a>
+            <a routerLink="/">
               <span  class="label">Home</span>
             </a>
           </li>
@@ -32,13 +32,13 @@
       <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
         <ul fxLayout fxLayoutGap="20px" class="navigation-items">
           <li>
-            <a>
-              <span  class="label">Login</span>
+            <a routerLink="/login">
+              <span class="label">Login</span>
             </a>
           </li>
           <li>
-            <a>
-              <span  class="label">Register</span>
+            <a routerLink="/register">
+              <span class="label">Register</span>
             </a>
           </li>
         </ul>
